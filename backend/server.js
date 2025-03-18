@@ -22,8 +22,9 @@ const app = express();
 // Connect to a MongoDB Atlas cluster, a cloud-based MongoDB service provided by MongoDB.
 // Commonly used in production environments for its scalability, reliability, and managed features.
 // Syntax of: MONGODB_URI = "mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/?retryWrites=true&w=majority";
-mongoose
-  .connect(process.env.MONGODB_URI)
+// mongoose
+//   .connect(process.env.MONGODB_URI)
+mongoose.connect(mongodb+srv://vadaodd145:eeWNPBnEho5V9tOB@qrcluster.dudy4.mongodb.net/?retryWrites=true&w=majority&appName=qrCluster)
   .then ( () => {
     console.log('connected to db');
     // Data Scraping - Read data from 'cloths.json' and inserts it into 'products' collection in MongoDB
